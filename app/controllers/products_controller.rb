@@ -7,7 +7,6 @@ class ProductsController < ApplicationController
     elsif params[:category].present?
       @products = Product.search_by_category(params[:category])
     end
-
   end
 
   def show
